@@ -1,0 +1,102 @@
+* {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #E1CCF5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 36px 0 rgba(0, 0, 0, .1);
+}
+
+.app .result {
+  padding-inline: 15px;
+  padding-block: 17px;
+  padding-top: 55px;
+  text-align: right;
+}
+
+.app .result .calculate {
+  font-size: 16px;
+  color: #8B8B8B;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.app .result .numresult {
+  font-size: 36px;
+  line-height: 44px;
+  color: #000;
+  font-weight: 400;
+}
+
+
+.app .operate {
+  background-color: #FCF6FF;
+  padding-block: 21px;
+  padding-inline: 19px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.app .operate .mOperate,
+.app .operate .row { display: flex; gap: 21px;}
+
+.app .operate .mOperate {
+  margin-bottom: 15px;
+}
+
+.app .operate button {
+  border: none;
+  padding-inline: 16px;
+  padding-block: 13px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+
+.app .operate .mbutton {
+  background-color: #DDC8F3;
+  border-radius: 18px;
+}
+
+.app .operate .mbutton:hover {
+  background-color: #FCF6FF;
+}
+
+.app .operate .numOperate {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.app .operate .numOperate .row button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #F1E5FB;
+  color: #932CFF;
+}
+
+.app .operate .numOperate .row button.num {
+  background-color: #fff;
+  color: #000;
+}
+
+.app .operate .numOperate .row button.equals { 
+  background-color: #932CFF;
+  color: #fff;
+}
